@@ -7,7 +7,11 @@ Turesky T, Jensen S, Yu X, Kumar S, Wang Y, Sliva D, Gagoski B, Sanfilippo J, Z�
 This study relied on code from several toolkits and written in several languages. The pipeline is as follows:
 
 MPRAGE segmentation:
+
+images were then warped to the neonate template (with cerebellum) from the Biomedical Research Imaging Center (BRIC) at the University of North Carolina (UNC; Shi et al., 2011) using the antsRegistrationSyNQuick module (Avants et al., 2011), consisting of rigid, affine, and deformable b‐spline Symmetric Normalization (“SyN”) transformations. 
+
 Infant FreeSurfer --> https://surfer.nmr.mgh.harvard.edu/fswiki/infantFS
+
 These segmentations were subsequently consolidated into gray mat‐ ter (GM), white matter (WM), and cerebrospinal fluid (CSF) regions‐ of‐interest (ROIs) for each participant using in‐house MATLAB 2015b (MathWorks) code. 
 The transforms derived in the previous step were combined and applied to the segmentations, warping them from native to standard space in one interpolation using the antsApplyTransforms module
 
