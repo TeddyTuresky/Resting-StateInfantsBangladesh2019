@@ -11,10 +11,12 @@ This study relied on code from several toolkits (ANTs, FreeSurfer, SPM, CONN) an
   
   
 **MPRAGE segmentation:** 
-##### * bias corrected --> N4biasCorrect.sh
-##### * registered to neonate template (https://www.nitrc.org/projects/pediatricatlas) --> antsNormalize.sh 
-##### * infant FreeSurfer --> https://surfer.nmr.mgh.harvard.edu/fswiki/infantFS 
-##### * registered segmentations from native to neonate template in one interpolation --> antsTransformsMasks.sh
+
+    .
+    ├── bias corrected --> N4biasCorrect.sh
+    ├── registered to neonate template (https://www.nitrc.org/projects/pediatricatlas) --> antsNormalize.sh 
+infant FreeSurfer --> https://surfer.nmr.mgh.harvard.edu/fswiki/infantFS 
+registered segmentations from native to neonate template in one interpolation --> antsTransformsMasks.sh
   
     
 **Resting-State:** 
