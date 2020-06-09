@@ -2,7 +2,7 @@
 
 This repository houses code (or links to code) used for the article:
 
-*Turesky T, Jensen S, Yu X, Kumar S, Wang Y, Sliva D, Gagoski B, Sanfilippo J, Zöllei L, Boyd E, Haque R, Kakon S, Islam N, Petri W, Nelson C, N G. 2019. The relationship between biological and psychosocial risk factors and resting-state functional connectivity in 2-month-old Bangladeshi infants: a feasibility and pilot study. Dev Sci. e12841.*
+##### *Turesky T, Jensen S, Yu X, Kumar S, Wang Y, Sliva D, Gagoski B, Sanfilippo J, Zöllei L, Boyd E, Haque R, Kakon S, Islam N, Petri W, Nelson C, N G. 2019. The relationship between biological and psychosocial risk factors and resting-state functional connectivity in 2-month-old Bangladeshi infants: a feasibility and pilot study. Dev Sci. e12841.*
 
 All code has been customized to the input for this particular study, and implemented on MacOSX, but can be adapted be replacing pertinent paths, filenames, etc. 
 
@@ -16,12 +16,12 @@ MPRAGE segmentation:
 
 
 Resting-State: 
-* discarded first 10 volumes 
-* slice-time corrected and realigned --> %SPM12 ./spmBatches/ 
-* estimated registration to MPRAGE --> antsCoreg.sh 
-* registered from native to neonate template --> antsTransforms.sh + BETA*.nii reference image 
-* smoothed with 6.0 mm FWHM Gaussian kernel --> %SPM12 ./spmBatches/ 
-* identified inter-volume head motion ≥0.5 mm root‐mean‐square displacement --> 
-* built CONN batch --> 
-* (in CONN dialogue, step #2) five principal components and band‐pass filter of 0.008–0.09 Hz 
-* transformed average ROI timeseries to single value decomposition -->
+##### * discarded first 10 volumes 
+##### * slice-time corrected and realigned --> %SPM12 ./spmBatches/ 
+##### * estimated registration to MPRAGE --> antsCoreg.sh 
+##### * registered from native to neonate template --> antsTransforms.sh + BETA*.nii reference image 
+##### * smoothed with 6.0 mm FWHM Gaussian kernel --> %SPM12 ./spmBatches/ 
+##### * identified inter-volume head motion ≥0.5 mm root‐mean‐square displacement --> 
+##### * built CONN batch --> 
+##### * (in CONN dialogue, step #2) five principal components and band‐pass filter of 0.008–0.09 Hz 
+##### * transformed average ROI timeseries to single value decomposition -->
