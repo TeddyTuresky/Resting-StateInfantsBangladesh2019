@@ -1,13 +1,12 @@
 function y = cfmiartrepair_4BEAN(var1,var2,scanDir)
 %%%% Writes out initial parameters
-% Taken from CFMI @ Georgetown University
-% Written by Kyle Shattuck
+% Written by Kyle Shattuck, CFMI @ Georgetown University (https://cfmi.georgetown.edu/)
 % for questions, please contact theodore.turesky@childrens.harvard.edu
 
 %----- Edit Below
 
-perc=2; %%%% perc = cut-off of global signal percent
-mvmt=2;%%% mvmt = cut-off of movement in mm
+perc=1; %%%% perc = cut-off of global signal percent
+mvmt=0.5;%%% mvmt = cut-off of movement in mm
 
 %------
 
