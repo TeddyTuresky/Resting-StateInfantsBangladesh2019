@@ -9,12 +9,14 @@ All code has been customized to the input for this particular study, and impleme
 
 This study relied on code from several toolkits (ANTs, FreeSurfer, SPM, CONN) and written in bash shell and Matlab. The following outline details the processing steps taken and specifies which scripts in this repository or outside packages were used to do so:
   
+</br>  
 **MPRAGE segmentation:** 
 ##### * bias corrected --> N4biasCorrect.sh
 ##### * registered to neonate template (https://www.nitrc.org/projects/pediatricatlas) --> antsNormalize.sh 
 ##### * infant FreeSurfer --> https://surfer.nmr.mgh.harvard.edu/fswiki/infantFS 
 ##### * registered segmentations from native to neonate template in one interpolation --> antsTransformsMasks.sh
   
+</br>  
   
 **Resting-State:** 
 ##### * discarded first 10 volumes 
