@@ -32,10 +32,8 @@ This study relied on code from several toolkits (ANTs, FreeSurfer, SPM, CONN) an
                                                                                 interpolation 
     ├── batch_smooth.m + 05smoothTemp.mat                                   <-- smooth with 6.0 mm FWHM Gaussian kernel 
     ├── cfmiartrepair_4BEAN.m + WIP_art_global_regressors_4BEAN.m           <-- identify head displacement ≥0.5mm RMS 
-    ├── batch_connBang.m                                                    <-- build CONN batch
-    ├── connBangRS08-smooth6mm_mot0.5_CorPCA.mat                            <-- (in CONN dialogue, step #1): neonate template 
-                                                                                five principal components and band‐pass filter 
-                                                                                of 0.008–0.09 Hz
+    ├── batch_connBang.m + connBangRS08-smooth6mm_mot0.5_CorPCA.mat         <-- build CONN batch (additional changes to *.m 
+                                                                                reflected in CONN *.mat file)
     ├── global CONN_x; CONN_x.Setup.extractSVD=true; conn save;             <-- replace ROI timeseries with first 
                                                                                 eigenvariate/first component from singular 
                                                                                 value decomposition   
