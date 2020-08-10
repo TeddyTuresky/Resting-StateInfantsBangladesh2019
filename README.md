@@ -11,7 +11,7 @@ This study relied on code from several toolkits (ANTs, FreeSurfer, SPM, CONN) an
   
   
   
-#### MPRAGE segmentation: 
+#### MPRAGE: 
 
     .
     ├── N4biasCorrect.sh                                                    <-- bias correct 
